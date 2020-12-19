@@ -1,1 +1,12 @@
+
+git status
+
+git add .
+
 git commit -m '提交一个文件'
+
+git push
+
+git remote add origin https://github.com/yuhcszyt/vueSuperMall.git
+
+git push -u origin main

@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7306803b-4cee-4775-b2db-284c299e337f" name="Default Changelist" comment="创建" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="learnVue01" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Less File" />
+        <option value="CSS File" />
+        <option value="Vue Single File Component" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="yuhcszyt &lt;2502203@163.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/learnvuejs/package.json" />
+  </component>
+  <component name="ProjectId" id="1h8fUsER030WhHcIHVZMMCvETcR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8.0_161" />
+    <property name="last_opened_file_path" value="D:/github/elladmin/eladmin-web-master" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\IntelliJ IDEA 2019.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jxr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="OPEN_URL_DIALOG">
+      <recent name="https://github.com/yuhcszyt/30-seconds-of-code" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\yu\IdeaProjects\learnVue\learnVuejs06\tabbar\src\components" />
+      <recent name="D:\Users\yu\IdeaProjects\learnVue\learnVuejs06\tabbar\src" />
+      <recent name="D:\Users\yu\IdeaProjects\learnVue01\learnV0102\01-webpack的使用\03-webpack的loader\src\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\yu\IdeaProjects\learnVue\learnVuejs08\01-promise的使用" />
+      <recent name="D:\Users\yu\IdeaProjects\learnVue\learnVuejs06\tabbar\src\views\profile" />
+      <recent name="D:\Users\yu\IdeaProjects\learnVue\learnVuejs06\tabbar\src\views\home" />
+      <recent name="D:\Users\yu\IdeaProjects\learnVue\learnVuejs06\tabbar\src\views\category" />
+      <recent name="D:\Users\yu\IdeaProjects\learnVue\learnVuejs06\tabbar\src\assets\img" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:8080">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7306803b-4cee-4775-b2db-284c299e337f" name="Default Changelist" comment="" />
+      <created>1599397658650</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599397658650</updated>
+      <workItem from="1599397661971" duration="3905000" />
+      <workItem from="1599490656646" duration="43000" />
+      <workItem from="1599748848229" duration="8000" />
+      <workItem from="1600442544382" duration="2454000" />
+      <workItem from="1600699208883" duration="1893000" />
+      <workItem from="1600780845948" duration="5656000" />
+      <workItem from="1600872281595" duration="2862000" />
+      <workItem from="1600955262400" duration="3410000" />
+      <workItem from="1601045517066" duration="14797000" />
+      <workItem from="1601304941956" duration="2319000" />
+      <workItem from="1601389591595" duration="911000" />
+      <workItem from="1601511301736" duration="16616000" />
+      <workItem from="1601689548168" duration="19580000" />
+      <workItem from="1602403367466" duration="1912000" />
+      <workItem from="1602598597721" duration="3278000" />
+      <workItem from="1602685262132" duration="3449000" />
+      <workItem from="1602868951930" duration="1795000" />
+      <workItem from="1602933479898" duration="13075000" />
+      <workItem from="1603112969126" duration="624000" />
+      <workItem from="1603115914953" duration="2563000" />
+      <workItem from="1603368582454" duration="15994000" />
+      <workItem from="1603810607986" duration="2471000" />
+      <workItem from="1603888541296" duration="1266000" />
+      <workItem from="1604102480710" duration="6792000" />
+      <workItem from="1604414722644" duration="602000" />
+      <workItem from="1604495801286" duration="338000" />
+      <workItem from="1604586429921" duration="3392000" />
+      <workItem from="1604590358982" duration="1606000" />
+      <workItem from="1604707964809" duration="10734000" />
+      <workItem from="1604755274568" duration="18561000" />
+      <workItem from="1605340047412" duration="6734000" />
+      <workItem from="1605530126623" duration="4730000" />
+      <workItem from="1605610933002" duration="7685000" />
+      <workItem from="1605709345678" duration="649000" />
+      <workItem from="1605797144532" duration="3253000" />
+      <workItem from="1605801850418" duration="232000" />
+      <workItem from="1605920568755" duration="9010000" />
+      <workItem from="1606145006055" duration="1553000" />
+      <workItem from="1606146704855" duration="1439000" />
+      <workItem from="1606315911908" duration="2146000" />
+      <workItem from="1606402805647" duration="1322000" />
+      <workItem from="1606545127570" duration="13219000" />
+      <workItem from="1606828795631" duration="6132000" />
+      <workItem from="1606909891183" duration="2193000" />
+      <workItem from="1606920043198" duration="1067000" />
+      <workItem from="1606998511444" duration="4426000" />
+      <workItem from="1607007900443" duration="33000" />
+      <workItem from="1607084487289" duration="25798000" />
+      <workItem from="1607264485220" duration="1885000" />
+      <workItem from="1607345097946" duration="7159000" />
+      <workItem from="1607519544528" duration="1775000" />
+      <workItem from="1607756284249" duration="26293000" />
+      <workItem from="1607873371884" duration="588000" />
+      <workItem from="1607956782607" duration="3077000" />
+      <workItem from="1607961881060" duration="143000" />
+      <workItem from="1608040764585" duration="3075000" />
+      <workItem from="1608047195612" duration="241000" />
+      <workItem from="1608047484664" duration="661000" />
+      <workItem from="1608118968846" duration="3005000" />
+      <workItem from="1608213686154" duration="1964000" />
+      <workItem from="1608350741102" duration="7220000" />
+    </task>
+    <task id="LOCAL-00004" summary="11">
+      <created>1600782168109</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600782168109</updated>
+    </task>
+    <task id="LOCAL-00005" summary="11">
+      <created>1600782372973</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600782372973</updated>
+    </task>
+    <task id="LOCAL-00006" summary="11">
+      <created>1600782452649</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600782452649</updated>
+    </task>
+    <task id="LOCAL-00007" summary="11">
+      <created>1600788177321</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600788177321</updated>
+    </task>
+    <task id="LOCAL-00008" summary="vue">
+      <created>1600875588554</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600875588554</updated>
+    </task>
+    <task id="LOCAL-00009" summary="vue">
+      <created>1600959622432</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600959622432</updated>
+    </task>
+    <task id="LOCAL-00010" summary="vue">
+      <created>1601085126573</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601085126573</updated>
+    </task>
+    <task id="LOCAL-00011" summary="vue">
+      <created>1601654955147</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601654955147</updated>
+    </task>
+    <task id="LOCAL-00012" summary="vue">
+      <created>1601690062333</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1601690062333</updated>
+    </task>
+    <task id="LOCAL-00013" summary="vue">
+      <created>1601712127095</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601712127095</updated>
+    </task>
+    <task id="LOCAL-00014" summary="vue">
+      <created>1602124473202</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1602124473202</updated>
+    </task>
+    <task id="LOCAL-00015" summary="vue">
+      <created>1602690597881</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602690597881</updated>
+    </task>
+    <task id="LOCAL-00016" summary="vue">
+      <created>1603035536025</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603035536025</updated>
+    </task>
+    <task id="LOCAL-00017" summary="vue">
+      <created>1603374076334</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603374076334</updated>
+    </task>
+    <task id="LOCAL-00018" summary="vue">
+      <created>1603609332991</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1603609332991</updated>
+    </task>
+    <task id="LOCAL-00019" summary="vue">
+      <created>1603611711337</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1603611711337</updated>
+    </task>
+    <task id="LOCAL-00020" summary="vue">
+      <created>1603812469800</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603812469800</updated>
+    </task>
+    <task id="LOCAL-00021" summary="vue">
+      <created>1604243263504</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1604243263504</updated>
+    </task>
+    <task id="LOCAL-00022" summary="vue">
+      <created>1604243429460</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1604243429460</updated>
+    </task>
+    <task id="LOCAL-00023" summary="vue">
+      <created>1604244876847</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1604244876847</updated>
+    </task>
+    <task id="LOCAL-00024" summary="vue">
+      <created>1604591464582</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1604591464582</updated>
+    </task>
+    <task id="LOCAL-00025" summary="vue">
+      <created>1604719376433</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1604719376433</updated>
+    </task>
+    <task id="LOCAL-00026" summary="vue">
+      <created>1604721932685</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1604721932685</updated>
+    </task>
+    <task id="LOCAL-00027" summary="vue">
+      <created>1604754681002</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1604754681002</updated>
+    </task>
+    <task id="LOCAL-00028" summary="vue">
+      <created>1604757711108</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1604757711108</updated>
+    </task>
+    <task id="LOCAL-00029" summary="vue">
+      <created>1604769118034</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1604769118034</updated>
+    </task>
+    <task id="LOCAL-00030" summary="vue">
+      <created>1604799458179</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1604799458179</updated>
+    </task>
+    <task id="LOCAL-00031" summary="vue">
+      <created>1604808432433</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1604808432433</updated>
+    </task>
+    <task id="LOCAL-00032" summary="vue">
+      <created>1604850036483</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1604850036483</updated>
+    </task>
+    <task id="LOCAL-00033" summary="vue">
+      <created>1605538557766</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1605538557766</updated>
+    </task>
+    <task id="LOCAL-00034" summary="vue">
+      <created>1605626785239</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1605626785239</updated>
+    </task>
+    <task id="LOCAL-00035" summary="数字金额格式化">
+      <created>1605800064507</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1605800064507</updated>
+    </task>
+    <task id="LOCAL-00036" summary="创建脚手架3">
+      <created>1606059645781</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1606059645781</updated>
+    </task>
+    <task id="LOCAL-00037" summary="创建脚手架3">
+      <created>1606146275110</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1606146275110</updated>
+    </task>
+    <task id="LOCAL-00038" summary="init">
+      <created>1606147378872</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1606147378872</updated>
+    </task>
+    <task id="LOCAL-00039" summary="创建脚手架3">
+      <created>1606147530482</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1606147530482</updated>
+    </task>
+    <task id="LOCAL-00040" summary="创建">
+      <created>1606147763859</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1606147763859</updated>
+    </task>
+    <task id="LOCAL-00041" summary="创建">
+      <created>1606147936734</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1606147936734</updated>
+    </task>
+    <task id="LOCAL-00042" summary="创建">
+      <created>1606319933918</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1606319933918</updated>
+    </task>
+    <task id="LOCAL-00043" summary="创建">
+      <created>1606546514507</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1606546514507</updated>
+    </task>
+    <task id="LOCAL-00044" summary="创建">
+      <created>1606550586834</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1606550586834</updated>
+    </task>
+    <task id="LOCAL-00045" summary="创建">
+      <created>1606830463952</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1606830463952</updated>
+    </task>
+    <task id="LOCAL-00046" summary="创建">
+      <created>1607150772643</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1607150772643</updated>
+    </task>
+    <task id="LOCAL-00047" summary="创建">
+      <created>1607164998917</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1607164998917</updated>
+    </task>
+    <task id="LOCAL-00048" summary="创建">
+      <created>1607177522664</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1607177522664</updated>
+    </task>
+    <task id="LOCAL-00049" summary="创建">
+      <created>1607268514953</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1607268514953</updated>
+    </task>
+    <task id="LOCAL-00050" summary="创建">
+      <created>1607848859920</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1607848859920</updated>
+    </task>
+    <task id="LOCAL-00051" summary="创建">
+      <created>1607865577364</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1607865577364</updated>
+    </task>
+    <task id="LOCAL-00052" summary="创建">
+      <created>1608379034345</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1608379034346</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/Users/yu/IdeaProjects/learnVue01/learnV0101/10-组件化开发" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/Users/yu/IdeaProjects/learnVue01/learnV0102" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="3">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/Users/yu/IdeaProjects/learnVue01/learnV0101" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="4">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/Users/yu/IdeaProjects/learnVue/learnVuejs06" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+        <option value="2" />
+        <option value="3" />
+        <option value="4" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="11" />
+    <MESSAGE value="vue" />
+    <MESSAGE value="数字金额格式化" />
+    <MESSAGE value="init" />
+    <MESSAGE value="创建脚手架3" />
+    <MESSAGE value="创建" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/learnVuejs06/runtimecompiler/src/main.js</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/learnV0102/01-webpack的使用/04-webpack的vue配置/src/main.js</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

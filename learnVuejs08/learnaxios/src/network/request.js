@@ -13,12 +13,12 @@ export  function request(conifg) {
      console.log(err);
    });
 
-   instance.interceptors.response.use(config=>{
+  /* instance.interceptors.response.use(config=>{
      console.log(config);
      return conifg
    },err=>{
      console.log(err);
-   });
+   });*/
 
 
      return instance(conifg);

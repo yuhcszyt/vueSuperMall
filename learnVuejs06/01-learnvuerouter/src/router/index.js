@@ -37,22 +37,27 @@ const routes=[
         redirect:'message',
       },
       {
-        path:"news",
-        component: HomeNews,
-        name:'新闻',
-        meta:{
-          title:'新闻'
-        }
-      },
-      {
         path:"message",
         component: HomeMessage,
         name:'消息',
         meta:{
           title:'消息'
         }
+      },
+      {
+        path:"news",
+        component: HomeNews,
+        meta:{
+          title:'新闻'
+        }
       }
     ]
+  },{
+    path:"/news",
+    component: HomeNews,
+    meta:{
+      title:'新闻'
+    }
   },
   {
     path:"/profile",
@@ -88,6 +93,7 @@ const router = new VueRouter({
 router.beforeEach((to,from,next)=>{
   const vm = to;
   console.log(vm);
+  console.log(to.matched[0]);
   document.title=to.matched[0].meta.title;
   //document.title=to.meta.title;
   next();

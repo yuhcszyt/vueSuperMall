@@ -11,6 +11,7 @@
     <router-view></router-view>-->
 
     <router-link to="/home" tag="button" replace>首頁</router-link>
+    <router-link to="/news">新闻</router-link>
     <router-link to="/about" tag="button" replace>关于</router-link>
    <!-- <router-link :to="'/user/'+userId" tag="button" replace>用戶</router-link>
     <router-link :to="{path:'/profile',query:{name:'yu',age:'18',height:178}}" tag="button" replace>档案</router-link>-->

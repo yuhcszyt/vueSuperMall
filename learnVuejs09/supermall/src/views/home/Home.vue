@@ -3,14 +3,17 @@
     <nav-bar class="home-nav">
       <div slot="center">购物街</div>
     </nav-bar>
+    <tab-control class='tab-control' :titles="['流行','新款','精选']"
+                 @tabClick="tabClick" ref="tabControl1" v-show="this.isTabFixed"></tab-control>
     <scroll class="content"
             ref="scroll" :probe-type="3"
             @scroll="contentScroll" @pullingUp="pullingUp" :pull-up-load="true">
-    <home-swiper :banners="banners"></home-swiper>
-    <home-recommend-view :recommends="recommends"></home-recommend-view>
-    <feature></feature>
-    <tab-control class="tab-control" :titles="['流行','新款','精选']" @tabClick="tabClick"></tab-control>
-    <goods-list class="goods" :goodsList="showGoods"></goods-list>
+      <home-swiper :banners="banners" @swiperImageLoad="swiperImageLoad"></home-swiper>
+      <home-recommend-view :recommends="recommends"></home-recommend-view>
+      <feature></feature>
+      <tab-control :titles="['流行','新款','精选']"
+                   @tabClick="tabClick" ref="tabControl2"></tab-control>
+      <goods-list class="goods" :goodsList="showGoods"></goods-list>
     </scroll>
     <back-top @click.native="backTop" v-show="isBackTopShow"></back-top>
   </div>
@@ -27,7 +30,8 @@
     import scroll from 'components/common/scroll/scroll';
     import backTop from 'components/content/backTop/BackTop.vue';
 
-    import {getHomeMultidata,getHomeGoods} from 'network/home'
+    import {getHomeMultidata, getHomeGoods} from 'network/home'
+    import {debounce} from 'common/utils.js'
 
     export default {
         name: "Home",
@@ -45,16 +49,27 @@
         },
         data() {
             return {
-                type:'pop',
+                type: 'pop',
                 banners: [],
                 recommends: [],
-                goods:{
-                    'pop':{page:0,list:[]},
-                    'new':{page:0,list:[]},
-                    'sell':{page:0,list:[]},
+                goods: {
+                    'pop': {page: 0, list: []},
+                    'new': {page: 0, list: []},
+                    'sell': {page: 0, list: []},
                 },
-                isBackTopShow:false,
+                isBackTopShow: false,
+                tabOffsetTop: 0,
+                isTabFixed: false,
+
+                scrollY: 0
             };
+        },
+        activated() {
+            this.$refs.scroll.scrollTo(0, this.scrollY,0);
+            this.$refs.scroll.refresh();
+        },
+        deactivated() {
+            this.scrollY = this.$refs.scroll.getScrollY();
         },
         created() {
             this.getHomeMultidata();
@@ -62,57 +77,71 @@
             this.getHomeGoods('pop');
             this.getHomeGoods('new');
         },
-        computed:{
-          showGoods(){
-              return this.goods[this.type].list;
-          }
+        mounted() {
+            this.$bus.$on('itemImageLoad', () => {
+                debounceRefresh();
+            });
+            const debounceRefresh = debounce(this.$refs.scroll.refresh, 200);
+            /*
+                        this.tabOffsetTop=this.$refs.tabControl.$el.offsetTop;
+            */
         },
 
-        methods:{
+        computed: {
+            showGoods() {
+                return this.goods[this.type].list;
+            }
+        },
+
+        methods: {
+            swiperImageLoad() {
+                this.tabOffsetTop = this.$refs.tabControl2.$el.offsetTop;
+            },
+
             /**
              * 事件监听
              */
-            tabClick(index){
-                console.log(index);
+            tabClick(index) {
                 switch (index) {
-                  case 0:
-                      this.type='pop';
-                      break;
-                  case 1:
-                      this.type='new';
-                      break;
-                  case 2:
-                      this.type='sell'
-                      break;
-              }
+                    case 0:
+                        this.type = 'pop';
+                        break;
+                    case 1:
+                        this.type = 'new';
+                        break;
+                    case 2:
+                        this.type = 'sell'
+                        break;
+                }
+                this.$refs.tabControl1.currentIndex = index;
+                this.$refs.tabControl2.currentIndex = index;
             },
-            pullingUp(){
+            pullingUp() {
                 this.getHomeGoods(this.type);
-                this.$refs.scroll.finishPullUp();
-                this.$refs.scroll.scroll.refresh();
             },
-            contentScroll(position){
-                console.log(-position.y);
-                this.isBackTopShow=(-position.y)>1000;
+            contentScroll(position) {
+                this.isBackTopShow = (-position.y) > 1000;
+                //tabcontrol判断是否吸顶
+                this.isTabFixed = (-position.y) > this.tabOffsetTop;
             },
-            backTop(){
-                this.$refs.scroll.scroll.scrollTo(0,0);
+            backTop() {
+                this.$refs.scroll.scrollTo(0, 0);
             },
             /**
              * 数据调用
              */
-            getHomeMultidata(){
+            getHomeMultidata() {
                 getHomeMultidata().then(res => {
                     this.banners = res.data.banner.list;
                     this.recommends = res.data.recommend.list;
                 })
             },
-            getHomeGoods(type){
-               const page=this.goods[type].page+1;
-                getHomeGoods(type,page).then(res=>{
-                    console.log(res);
+            getHomeGoods(type) {
+                const page = this.goods[type].page + 1;
+                getHomeGoods(type, page).then(res => {
                     this.goods[type].list.push(...res.data.list);
-                    this.goods[type].page+=1;
+                    this.goods[type].page += 1;
+                    this.$refs.scroll.finishPullUp();
                 })
             }
         }
@@ -121,35 +150,43 @@
 
 <style scoped>
   #home {
-    padding-top: 44px;
+    /*
+        padding-top: 44px;
+    */
     position: relative;
 
     height: 100vh;
 
   }
 
-  .home-nav {
-    background-color: var(--color-tint);
-    color: #fff;
+  .fixed {
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: 44px;
+  }
+
+  .home-nav {
+    background-color: var(--color-tint);
+    color: #fff;
+    /*    position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 9;*/
+  }
+
+  .tab-control {
+    position: relative;
     z-index: 9;
   }
-  .tab-control{
-    position: sticky;
-    top:44px;
-    z-index: 9;
-  }
-  .content{
+
+  .content {
     position: absolute;
     top: 44px;
     bottom: 49px;
     left: 0px;
     right: 0px;
-/*
     overflow: hidden;
-*/
   }
 </style>

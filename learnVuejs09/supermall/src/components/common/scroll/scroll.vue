@@ -48,6 +48,7 @@
                 this.scroll.finishPullUp();
             },
             refresh(){
+                console.log("refresh");
                 this.scroll&&this.scroll.refresh();
             },
             getScrollY(){

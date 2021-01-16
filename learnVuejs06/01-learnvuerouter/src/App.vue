@@ -36,14 +36,12 @@ export default {
     },
     methods:{
         linkToHome(){
-            console.log("home");
             //  this.$router.push('/home');
             this.$router.replace('/home')
 
         },
         linkToAbout()
         {
-            console.log("about")
             //this.$router.push('/about');
             this.$router.replace('/about')
         },

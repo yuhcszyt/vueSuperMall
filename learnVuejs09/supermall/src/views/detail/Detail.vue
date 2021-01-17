@@ -8,6 +8,7 @@
       <detail-goods-info :detail-info="detailInfo" @detailImageLoad="detailImageLoad"></detail-goods-info>
       <detail-param-info :paramInfo="paramInfo"></detail-param-info>
       <detail-comment-info ref="comment" :comment-info="commentInfo"></detail-comment-info>
+      <detail-recommend-info :recommendList="recommends"></detail-recommend-info>
     </scroll>
   </div>
 </template>
@@ -23,8 +24,13 @@
     import DetailGoodsInfo from "./childComps/DetailGoodsInfo";
     import DetailParamInfo from './childComps/DetailParamInfo'
     import DetailCommentInfo from './childComps/DetailCommentInfo'
+    import DetailRecommendInfo from "./childComps/DetailRecommendInfo";
 
-    import {getDetail, Goods, Shop,GoodsParam} from "network/detail";
+    import {debounce} from 'common/utils.js';
+    import {
+        getDetail, getRecommend,
+        Goods, Shop,GoodsParam,
+    } from "network/detail";
 
     export default {
         name: "detail",
@@ -36,7 +42,8 @@
             DetailShopInfo,
             DetailGoodsInfo,
             DetailParamInfo,
-            DetailCommentInfo
+            DetailCommentInfo,
+            DetailRecommendInfo
         },
         data() {
             return {
@@ -47,12 +54,15 @@
                 detailInfo: {},
                 imageLoadCount :0,
                 paramInfo: {},
-                commentInfo:{}
+                commentInfo:{},
+                debounceRefresh:{},
+                recommends:[]
             }
         },
         created() {
             this.iid = this.$route.params.iid;
             this.getDetail();
+            this.getRecommend();
         },
         computed:{
             dataImgageCount(){
@@ -60,6 +70,7 @@
             }
         },
         mounted() {
+             this.debounceRefresh = debounce(this.$refs.scroll.refresh, 200);
         },
         methods: {
             getDetail() {
@@ -79,15 +90,17 @@
                         if (data.rate.list) {
                             this.commentInfo = data.rate.list[0];
                         }
-                        console.log(this.commentInfo);
+                        console.log(res);
                     })
             },
             detailImageLoad(){
-                if(++this.imageLoadCount==this.dataImgageCount){
-                    console.log("this.$refs.scroll.refresh()");
-                    this.$refs.scroll.refresh();
-                }
-            }
+                this.debounceRefresh();
+            },
+            getRecommend(){
+                getRecommend().then((res)=>{
+                    this.recommends=res.data.list;
+                })
+            },
         }
     }
 </script>

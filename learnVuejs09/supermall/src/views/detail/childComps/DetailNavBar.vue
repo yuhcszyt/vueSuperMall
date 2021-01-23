@@ -30,6 +30,7 @@
         methods:{
             titleClick(index){
                 this.currentIndex=index;
+                this.$emit("DetailNavBarIndex",index);
             },
             backClick(){
                 this.$router.back();

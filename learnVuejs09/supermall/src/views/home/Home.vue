@@ -32,6 +32,7 @@
 
     import {getHomeMultidata, getHomeGoods} from 'network/home'
     import {debounce} from 'common/utils.js'
+    import {backTopMixin} from 'common/mixin.js'
 
     export default {
         name: "Home",
@@ -43,10 +44,10 @@
             NavBar,
             TabControl,
             GoodsList,
-            scroll,
-            backTop,
+            scroll
 
         },
+        mixins:[backTopMixin],
         data() {
             return {
                 type: 'pop',
@@ -123,9 +124,6 @@
                 this.isBackTopShow = (-position.y) > 1000;
                 //tabcontrol判断是否吸顶
                 this.isTabFixed = (-position.y) > this.tabOffsetTop;
-            },
-            backTop() {
-                this.$refs.scroll.scrollTo(0, 0);
             },
             /**
              * 数据调用
